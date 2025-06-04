@@ -1,0 +1,80 @@
+.recipe-grid {
+  display: grid;
+  gap: 1.2rem 1.5rem;
+  grid-template-columns: repeat(4, calc(100% / 4 - 1.5rem * 3 / 4));
+  justify-content: center;
+}
+.recipe-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 5px;
+}
+.recipe-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.recipe-card h4 {
+  font-size: 18px;
+  height: calc(1.5em * 2);
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+  margin-top: 1rem;
+}
+.pagination button {
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-size: 18px;
+  background: #e0dfdf;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.pagination button:hover {
+  background: black;
+  color: white;
+}
+.pagination .active {
+  font-weight: bold;
+  background: black;
+  color: white;
+}
+@media screen and (max-width: 1200px) {
+  .recipe-grid {
+    grid-template-columns: repeat(3, calc(100% / 3 - 1.5rem * 2 / 3));
+  }
+}
+@media screen and (max-width: 1000px) {
+  .recipe-card h4 {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .recipe-grid {
+    grid-template-columns: repeat(2, calc(100% / 2 - 1.5rem * 1 / 2));
+  }
+}
+@media screen and (max-width: 600px) {
+  .recipe-grid {
+    grid-template-columns: repeat(1, 100%);
+  }
+  .recipe-card h4 {
+    font-size: 15px;
+    height: auto;
+  }
+  .recipe-card p {
+    font-size: 14px;
+    height: auto;
+  }
+  .pagination button {
+    font-size: 14px;
+  }
+}
