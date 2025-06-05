@@ -3,12 +3,13 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background: white;
+  background: #978a7a;
   border-bottom: 1px solid #ccc;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 0;
   z-index: 100;
+  color: #fff;
 }
 .logo {
   font-weight: bold;
@@ -20,6 +21,7 @@
   font-size: 1.2rem;
   margin: 0 1rem;
   cursor: pointer;
+  color: #fff;
 }
 .header-center button:hover {
   text-decoration: underline;
@@ -39,13 +41,14 @@
 
   .burger-btn {
     display: block;
+    color: #fff;
   }
 
   .side-menu {
     position: absolute;
     top: 100%;
     right: 0;
-    background: white;
+    background: #978a7a;
     border: 1px solid #ccc;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
     display: flex;
@@ -63,6 +66,7 @@
     font-size: 1.2rem;
     text-align: left;
     cursor: pointer;
+    color: #fff;
   }
 
   .side-menu button:hover {
