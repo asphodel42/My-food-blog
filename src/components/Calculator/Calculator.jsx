@@ -3,6 +3,7 @@ import "./Calculator.css";
 
 function Calculator() {
   const [input, setInput] = useState("");
+  const [lastOperation, setLastOperation] = useState("");
 
   const handleClick = (value) => {
     setInput((prev) => prev + value);
@@ -15,6 +16,7 @@ function Calculator() {
   const handleEqual = () => {
     try {
       const result = eval(input);
+      setLastOperation(input);
       setInput(result.toString());
     } catch {
       setInput("Error");
@@ -43,7 +45,7 @@ function Calculator() {
           <button onClick={() => handleClick("*")}>×</button>
 
           <button onClick={() => handleClick("1")}>1</button>
-          <button onClick={() => handleClick("2")}>2</button>
+          <button onClick={() => setInput(lastOperation)}>2</button>
           <button onClick={() => handleClick("3")}>3</button>
           <button onClick={() => handleClick("-")}>−</button>
 

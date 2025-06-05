@@ -36,8 +36,8 @@ function RecipeGrid() {
   return (
     <>
       <div ref={gridRef} className="recipe-grid">
-        {visibleItems.map((recipe) => (
-          <RecipeCard key={recipe.id} {...recipe} />
+        {visibleItems.map((recipe, index) => (
+          <RecipeCard key={recipe.id} {...recipe} delay={index * 0.3} />
         ))}
       </div>
       <PaginationSlider

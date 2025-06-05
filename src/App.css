@@ -13,3 +13,26 @@ hr {
   width: 100%;
   border-color: #ffffff47;
 }
+
+.recipe-card {
+  animation: fade-in 2.5s ease-in-out forwards;
+}
+.about-img-ct.animate {
+  animation: fade-in 2.5s ease-in-out forwards;
+}
+.about-text-ct.animate {
+  animation: fade-in 2.5s ease-in-out forwards;
+  animation-delay: 0.5s;
+}
+
+@keyframes fade-in {
+  50% {
+    opacity: 1;
+    transform: translatex(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translatex(0);
+    box-shadow: #00000059 0px 5px 15px;
+  }
+}
