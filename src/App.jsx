@@ -6,7 +6,10 @@ function App() {
   return (
     <>
       <main>
-        <RecipeGrid></RecipeGrid>
+        <div>
+          <RecipeGrid></RecipeGrid>
+        </div>
+        <hr />
         <AboutBlock></AboutBlock>
       </main>
     </>
