@@ -20,6 +20,7 @@
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
+  background: #eee;
   line-height: 1.5;
   font-weight: 400;
   scroll-behavior: smooth;
