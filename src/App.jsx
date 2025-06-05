@@ -1,6 +1,8 @@
 import AboutBlock from "./components/AboutBlock/AboutBlock.jsx";
 import RecipeGrid from "./components/RecipeCards/RecipeGrid.jsx";
+import Calculator from "./components/Calculator/Calculator.jsx";
 import Header from "./components/Header/Header.jsx";
+import Footer from "./components/Footer/Footer.jsx";
 import "./App.css";
 
 function App() {
@@ -16,8 +18,11 @@ function App() {
           <AboutBlock></AboutBlock>
         </section>
         <hr />
-        <section className="sec-3" id="sec_3"></section>
+        <section className="sec-3" id="sec_3">
+          <Calculator></Calculator>
+        </section>
       </main>
+      <Footer />
     </>
   );
 }
