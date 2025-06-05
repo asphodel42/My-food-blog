@@ -74,7 +74,7 @@ export const recipes = [
     image: "./src/assets/images/popsicle.jpg",
   },
   {
-    id: 3,
+    id: 13,
     title: "The Perfect Sandwich, A Real NYC Classic",
     description: "Just some random text lorem ipsum.",
     image: "./src/assets/images/sandwich.jpg",
